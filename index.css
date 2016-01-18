@@ -9,7 +9,7 @@
 .info-text
 {
 	display: inline-block;
-	color: rgba(0,0,0,.54);
+	color: #495358;
 }
 .from-text
 {
@@ -46,11 +46,7 @@
 {
 	min-height: 0px;
 }
-.image-tag 
-{
-	width: 100%;
-	height: 100%;	
-}
+
 .material-icons
 {
 	color: rgba(0,0,0,.54);
@@ -76,8 +72,71 @@
     line-height: 1.38;
     overflow: hidden
     direction: ltr;
-    display: inline;
     margin-bottom: 0;
     padding-left: 5px;
-    font-weight: 500;
+}
+.image-description{
+	padding-left: 30%;
+	margin-left: 10px;
+	position: absolute;
+	padding-top: 10px;
+}
+.image-right-text
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+.image-right-bottom-text
+{
+	font-size: 15px;
+}
+
+.description-text
+{
+	font-weight: 500;
+}
+.info-icon
+{
+	padding-bottom: 25px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+.info-middle-icon
+{
+	font-size: 15px;
+}
+.image-card
+{
+  width: 100%;
+  padding: 0px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.image-container
+{
+  position: relative; 
+  height: 170px;
+  color: #495358;
+}
+
+.image
+{
+  width:30%;
+  float: left;
+  height: 170px;
+}
+.image-tag {
+  width: 100%;
+  height: 100%; 
+}
+.image-domain{
+  margin-left: 10px;
+  padding-left: 30%;
+  position: absolute;
+  bottom: 10px;
+}
+.picture
+{
+	color: #000;
 }
