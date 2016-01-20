@@ -5,11 +5,11 @@
 	font-size: 35px;
 	margin-top: 5px;
 }
-
 .info-text
 {
 	display: inline-block;
 	color: #495358;
+	padding-left: 6px;
 }
 .from-text
 {
@@ -53,7 +53,6 @@
 }
 .description
 {
-	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 14px;
 	padding-left: 5px;
@@ -88,7 +87,7 @@
 }
 .image-right-bottom-text
 {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .description-text
@@ -103,7 +102,7 @@
 }
 .info-middle-icon
 {
-	font-size: 15px;
+	font-size: 14px;
 }
 .image-card
 {
@@ -136,7 +135,38 @@
   position: absolute;
   bottom: 10px;
 }
-.picture
+.comment-icon
 {
-	color: #000;
+	padding-left: 10px;
+}
+.link-text
+{
+	text-decoration: none;
+	color: #495358;
+}
+.container-link
+{  
+	padding-left: 5px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.container-button
+{
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.mdl-button
+{
+	color: #495358;
+}
+.icon
+{
+	color: #fff;
+	padding-top: 8px;
+}
+.description-link
+{
+	padding-top: 10px;
+	padding-bottom: 0;
 }
