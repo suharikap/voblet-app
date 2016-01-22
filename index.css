@@ -37,7 +37,6 @@
 	padding: 12px;
 	max-height: 600px;
 }
-
 .material-icons.md-39
 {
 	font-size: 39px;
@@ -57,14 +56,13 @@
 	font-size: 14px;
 	padding-left: 5px;
 }
-.mdl-button--icon
+.timeline-button
 {
 	height: 48px;
 	border-radius: 0%;
 }
 .container-text
 {
-    
 	zoom:1;
 	font-size: 14px;
 	font-weight: normal;
@@ -74,22 +72,17 @@
     margin-bottom: 0;
     padding-left: 5px;
 }
-.image-description{
+.bookmark-description
+{
 	padding-left: 30%;
 	margin-left: 10px;
 	position: absolute;
 	padding-top: 10px;
 }
-.image-right-text
-{
-	font-weight: bold;
-	font-size: 18px;
-}
-.image-right-bottom-text
+.bookmark-image-text
 {
 	font-size: 16px;
 }
-
 .description-text
 {
 	font-weight: 500;
@@ -111,25 +104,25 @@
   margin-top: 5px;
   font-size: 12px;
 }
-
-.image-container
+.bookmark-container
 {
   position: relative; 
   height: 170px;
   color: #495358;
 }
-
-.image
+.bookmark-image
 {
   width:30%;
   float: left;
   height: 170px;
 }
-.image-tag {
+.image-tag
+ {
   width: 100%;
   height: 100%; 
 }
-.image-domain{
+.bookmark-image-domain
+{
   margin-left: 10px;
   padding-left: 30%;
   position: absolute;
@@ -156,7 +149,7 @@
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
-.mdl-button
+.file-button
 {
 	color: #495358;
 }

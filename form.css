@@ -1,0 +1,76 @@
+.mdl-card
+{
+	width: 100%;	
+	padding: 12px;
+}
+.top-text
+{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+.icon
+{
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.material-icons
+{
+	padding-right: 10px;
+}
+.middle-text
+{
+	display: flex;
+	padding-left: 20px;
+    font-size: 15px;
+}
+.first-text
+{
+	padding-top: 25px;
+	padding-right: 90px;
+}
+.second-text
+{
+	padding-top: 25px;
+	padding-right: 75px;
+}
+.third-text
+{
+	padding-top: 25px;
+	padding-right: 80px;
+}
+.mdl-button
+{
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.bottom-text
+{
+	height: 50px;
+}
+.form-bottom
+{
+	display: flex;
+}
+.bottom-button
+{
+   margin-left: auto;
+   padding-top: 15px;
+}
+.dropdown
+{
+	padding-top: 25px;
+	padding-left: 35px;
+}
+.from-text
+{
+	text-align: center;
+}
+.content-text
+{
+	text-align: center;
+}
+select
+{
+	max-width: 291px;
+}
