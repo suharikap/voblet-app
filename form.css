@@ -1,33 +1,35 @@
 .mdl-card
 {
 	width: 100%;	
-	padding: 12px;
+	padding: 20px;
 }
 .top-text
 {
-	padding-top: 20px;
-	padding-left: 20px;
 	font-size: 15px;
+	font-weight: bold;
 }
 .icon
 {
-	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .material-icons
 {
-	padding-right: 10px;
+	color: #495358;
+	padding-right: 5px;
+}
+.material-icons.md-20
+{
+	font-size: 20px;
 }
 .middle-text
 {
 	display: flex;
-	padding-left: 20px;
     font-size: 15px;
 }
 .first-text
 {
 	padding-top: 25px;
-	padding-right: 90px;
+	padding-right: 65px;
 }
 .second-text
 {
@@ -41,7 +43,6 @@
 }
 .mdl-button
 {
-	margin-right: 30px;
 	margin-bottom: 20px;
 }
 .bottom-text
@@ -51,16 +52,19 @@
 .form-bottom
 {
 	display: flex;
+	height: 40px;
 }
 .bottom-button
 {
    margin-left: auto;
-   padding-top: 15px;
 }
 .dropdown
 {
 	padding-top: 25px;
-	padding-left: 35px;
+}
+select
+{
+	width: 310px;
 }
 .from-text
 {
@@ -70,7 +74,15 @@
 {
 	text-align: center;
 }
-select
+.text-label
 {
-	max-width: 291px;
+
+}
+.mdl-textfield
+{
+	width: 100%;
+}
+.content-text-feild
+{
+	padding-top: 0px;
 }
