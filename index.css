@@ -163,3 +163,26 @@
 	padding-top: 10px;
 	padding-bottom: 0;
 }
+.navbar-icon
+{
+	color: #fff;
+}
+ul
+{
+	max-width: 100px;
+	margin : 0 auto;
+}
+.menu-list
+{
+	background-color: #ECECEC;
+}
+li
+{
+	padding-left: 20px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.menu-list-item:hover
+{
+	background-color: #ECECEC;
+}

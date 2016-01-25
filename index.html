@@ -33,7 +33,7 @@
 
   <link rel="stylesheet" href="css/material.min.css">
   <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet"href="index.css">
+  <link rel="stylesheet" href="index.css">
 
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
@@ -86,9 +86,9 @@
         <a href="../customize/index.html" class="mdl-navigation__link customize">Customize</a>
         <a href="../faq/index.html" class="mdl-navigation__link faq">FAQ</a>
         <div class="spacer"></div>
-        <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons">link</i><span>GitHub</span></a>
+        <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons navbar-icon">link</i><span>GitHub</span></a>
         <a href="../started/index.html#download" class="mdl-navigation__link mdl-navigation__link--icon download">
-          <i class="material-icons">&#xE2C4;</i><span>Download</span>
+          <i class="material-icons navbar-icon">&#xE2C4;</i><span>Download</span>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200">
             <i class="material-icons">&#xE2C4;</i>
           </button>
@@ -101,6 +101,16 @@
   <main class="mdl-layout__content">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col">
+      <div class="menu-container">
+      <ul>
+        <li>Inbox</li>
+        <li>Starred</li>
+        <li class="menu-list">Important</li>
+        <li class="menu-list-item">Inbox</li>
+        <li>Starred</li>
+        <li>Important</li>
+      </ul>
+      </div>
       </div>
       <div class="mdl-cell mdl-cell--6-col">
         <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
@@ -137,16 +147,7 @@
        </div>
      </div>
    </div>
- </div>
- <div class="mdl-cell mdl-cell--3-col">
- </div>
-</div>
-
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col">
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card card">
       <div id="top-container">            
         <span class="fa-stack fa-lg info-icon">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -179,15 +180,7 @@
    </div>
  </div>
 </div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col">
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card card">
       <div id="top-container">        
         <span class="fa-stack fa-lg info-icon">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -235,15 +228,8 @@
 </a>
 </div>
 </div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col">
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+
+    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card card">
       <div id="top-container">            
         <span class="fa-stack fa-lg info-icon">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -277,15 +263,7 @@
       </button>
   </div>
 </div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col">
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card card">
       <div id="top-container">                     
         <div class="info-text">
          <div class="from-text">
@@ -303,7 +281,7 @@
       <li class="mdl-menu__item">Another Action</li>
       <li disabled class="mdl-menu__item">Disabled Action</li>
       <li class="mdl-menu__item">Yet Another Asction</li>
-    </ul> 
+    </ul>
   </div>
   <div class="description description-link">
    Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
@@ -316,7 +294,6 @@
     </div>
 </div>
 </div>
-
 <div class="mdl-cell mdl-cell--3-col">
 </div>
 </div>
