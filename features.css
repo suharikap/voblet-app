@@ -1,0 +1,45 @@
+.mdl-card
+{
+	padding: 45px 20px 20px;
+	width: 250px;
+}
+.material-icons.md-27
+{
+	font-size: 27px;
+	color: #495358;
+}
+.card-text
+{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-top: 10px;
+    color: #495358;
+}
+.div1
+{
+	width: 250px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+.top-text
+{
+	font-size: 68px;
+	font-weight: 300;
+    line-height: 1em;
+	margin-right: 20px;
+}
+.top-bottom-text
+{
+	font-size: 23px;
+	font-weight: 300;
+	padding-top: 20px;
+	line-height: 1em;
+	padding-bottom: 20px;
+}
+.header-text
+{
+	max-width: 800px;
+	text-align: center;
+}

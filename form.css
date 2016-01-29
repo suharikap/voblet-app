@@ -74,10 +74,7 @@ select
 {
 	text-align: center;
 }
-.text-label
-{
 
-}
 .mdl-textfield
 {
 	width: 100%;
@@ -85,4 +82,18 @@ select
 .content-text-feild
 {
 	padding-top: 0px;
+}
+.header-icon
+{
+	color: white;
+}
+@media screen and (max-width: 346px) {
+	.mdl-card
+	{
+		padding: 0;
+	}
+   select
+   {
+   	width: 180px;
+   }
 }
