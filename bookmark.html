@@ -1,0 +1,122 @@
+<html lang="en" class="mdl-js">
+<head>
+  <title>bookmark</title>
+
+  <link rel="stylesheet" href="material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+  <link href="bookmark.css" rel="stylesheet">
+</head>
+<body class="body-color">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Bookmark</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">     
+          <a class="mdl-navigation__link" href="">Logout</a>
+        </nav>
+      </div>
+    </header>
+  <main class="mdl-layout__content">
+  <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+      <div class="search-field">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1">
+        <label class="mdl-textfield__label" for="sample1">Search</label>
+      </div>
+      <div class="top-right">
+      <i class="material-icons md-30">&#xE8F0;</i>
+      </div>
+      </div>
+      </div>
+      <div class="mdl-cell mdl-cell--3-col">
+      </div>
+  </div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">
+      <div>
+      <ul class="list">
+        <li>Inbox</li>
+        <li>Starred</li>
+        <li class="menu-list">Important</li>
+        <li class="menu-list-item">Inbox</li>
+        <li>Starred</li>
+        <li>Important</li>
+        <li class="list-last-text">
+        <div class="list-last-item">
+        <i class="material-icons">&#xE146;</i>
+        <div>Add new</div>
+        </div>
+        </li>
+      </ul>
+      </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+      <div class="div1">
+       <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp img-card">
+       <div class="card-inner">
+       <img src="projectimg.jpg" class="project-img">
+      </div>
+      <div class="card-inner-bottom">
+      <div class="card-inner-text">
+        project
+      </div>
+      <div class="card-icon">
+      <nav class="nav-main">
+         <a href="#" class="material-icons nav-item ">&#xE5D4;</a>
+           <div class="nav-content">
+           <div class="nav-sub">
+             <ul>
+               <li>View</li>
+               <li>Select</li>
+               <li>Edit</li>
+               <li>Delete</li>
+             </ul>
+             </div>
+             </div>
+      </nav>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <!--<div class="div1">
+       <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp img-card">
+       <div class="card-inner">
+       <img src="projectimg.jpg" class="project-img">
+      </div>
+      <div class="card-inner-bottom">
+      <div class="card-inner-text">
+        project
+      </div>
+      <button id="timeline-text-menu" class="mdl-button mdl-js-button timeline-button button-align">
+       <i class="material-icons">more_vert</i>
+     </button>
+     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="timeline-text-menu">
+      <li class="mdl-menu__item">Some Action</li>
+      <li class="mdl-menu__item">Another Action</li>
+      <li disabled class="mdl-menu__item">Disabled Action</li>
+      <li class="mdl-menu__item">Yet Another Asction</li>
+    </ul>
+      </div>
+      </div>
+      </div>-->
+      </div>
+      <div class="mdl-cell mdl-cell--3-col">
+      </div>
+    </div>
+  </main>
+  </div>
+  
+  <script src="js/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+</body>
+</html>
