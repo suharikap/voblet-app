@@ -20,12 +20,13 @@
 .date-and-time
 {
 	color: #919499;
+	font-size: 13px;
 }
-.button-align
+/*.button-align
 {
 	float: right;
 	color: #7C7C7C;
-}
+}*/
 .image-wrapper
 {
 	height: 300px;
@@ -189,4 +190,48 @@ li
 .card
 {
 	margin-top: 15px;
+}
+.mdl-new-card
+{
+	min-height: 0px;
+	display: flex;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 200px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;   
+    position: relative; 
+    box-sizing: border-box;
+}
+.top-row
+{
+	display: flex;
+	box-sizing:border-box;
+	width: 100%;
+}
+.top-container
+{
+	width: 70%;
+}
+.right-menu
+{	
+	width: 30%;
+	box-sizing: border-box;
+    float: right;
+}
+.button-align
+{
+	float: right;
+}
+.mdl-layout
+{
+	overflow-y:hidden;
 }

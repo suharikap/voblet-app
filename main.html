@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Design Lite</title>
+  <!-- Add to homescreen -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Fallback to homescreen for Chrome <39 on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Material Design Lite">
+  <link rel="icon" sizes="192x192" href="../assets/android-desktop.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon" href="../assets/ios-desktop.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+  <meta name="theme-color" content="#263238">
+
+  <link rel="shortcut icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="styles">
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-25993200-9', 'auto');
+      if (window.location.pathname.indexOf('/components/') !== -1 &&
+        window.location.hash.indexOf('-section') !== -1) {
+        ga('send', 'pageview', '/components/' +
+          window.location.hash.split('#')[1].split('/')[0]);
+    } else {
+      ga('send', 'pageview');
+    }
+    window.onerror = function(message, file, lineNumber, columnNumber, error) {
+      try {
+        if (error !== undefined) {
+          message = error.stack;
+        }
+        ga('send', 'event', 'error', file + ':' + lineNumber, String(message));
+      } catch (e) {
+      // no-op
+    }
+  };
+</script>
+<div class="image-preloader"></div>
+<div class="docs-layout mdl-layout mdl-js-layout">
+  <header class="docs-layout-header mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="docs-layout-title mdl-layout-title"><a href="../">Material<br>Design<br>Lite</a></span>
+    </div>
+    <div class="docs-navigation__container">
+      <nav class="docs-navigation mdl-navigation">
+        <a href="./form.html" class="mdl-navigation__link templates">Form</a>
+        <a href="./main.html" class="mdl-navigation__link styles">bookmark</a>
+        <a href="./features.html" class="mdl-navigation__link customize">features</a>
+        <a href="./faq.html" class="mdl-navigation__link faq">faq</a>
+        <div class="spacer"></div>
+        <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons header-icon">link</i><span>GitHub</span></a>
+        <a href="../started/index.html#download" class="mdl-navigation__link mdl-navigation__link--icon download">
+          <i class="material-icons header-icon">&#xE2C4;</i><span>Download</span>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200">
+            <i class="material-icons">&#xE2C4;</i>
+          </button>
+        </a>
+      </nav>
+    </div>
+    <i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i>
+    <i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i>
+    </header>
+    <style>
+.mdl-new-card
+{
+	display: flex;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 200px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;    
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.top-row
+{
+	width: 100%;
+}
+.top-container
+{
+	float: left;
+}
+.right-menu
+{	
+	box-sizing: border-box;
+    float: right;
+}
+.button-align
+{
+	float: right;
+}
+.image-tag
+{
+  width: 100%;
+  height: 100%; 
+}
+.image-wrapper
+{
+	height: 300px;
+}
+.description
+{
+	padding-bottom: 20px;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.timeline-card 
+{
+    width: 100%;
+    font-size: 12px;
+    padding: 12px;
+    max-height: 600px;
+}
+.from-text
+{
+	font-size: 14px;
+	font-weight: bold;	
+	padding-top: 5px;
+}
+.date-and-time
+{
+	color: #919499;
+	font-size: 13px;
+}
+.info-text
+{
+	display: inline-block;
+	color: #495358;
+	padding-left: 6px;
+}
+.mdl-layout
+{
+	overflow-y:hidden;
+}
+
+ul
+{
+	margin : 0 auto;
+}
+.menu
+{
+	max-width: 150px;
+	padding-left: 25%;
+}
+.menu-list
+{
+	background-color: #ECECEC;
+}
+li
+{
+	padding-left: 20px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.menu-list-item:hover
+{
+	background-color: #ECECEC;
+}
+.info-icon
+{
+	padding-bottom: 25px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+.info-middle-icon
+{
+	font-size: 14px;
+}
+.description-text
+{
+	font-weight: 500;
+}
+.container-text
+{
+	zoom:1;
+	font-size: 14px;
+	font-weight: normal;
+    line-height: 1.38;
+    overflow: hidden
+    direction: ltr;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.bookmark-container
+{
+  position: relative; 
+  height: 170px;
+  color: #495358;
+}
+.bookmark-image
+{
+  width:30%;
+  float: left;
+  height: 170px;
+}
+.image-tag
+ {
+  width: 100%;
+  height: 100%; 
+}
+.bookmark-image-domain
+{
+  margin-left: 10px;
+  padding-left: 30%;
+  position: absolute;
+  bottom: 10px;
+}
+.bookmark-description
+{
+	padding-left: 30%;
+	margin-left: 10px;
+	position: absolute;
+	padding-top: 10px;
+}
+.bookmark-image-text
+{
+	font-size: 16px;
+}
+.container-button
+{
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.file-button
+{
+	color: #495358;
+}
+.description-link
+{
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+.link-text
+{ 
+	text-decoration: none;
+	color: #495358;
+}
+.container-link
+{  
+	padding-left: 5px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.icon
+{
+	color: #fff;
+	padding-top: 8px;
+}
+</style>
+</head>
+<body>
+<main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">  
+        <div class="menu">
+       <ul>
+        <li>Inbox</li>
+        <li>Starred</li>
+        <li class="menu-list">Important</li>
+        <li class="menu-list-item">Inbox</li>
+        <li>Starred</li>
+        <li>Important</li>
+      </ul>
+      </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+       Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
+     </div>
+     <div class="container">
+       <div class="image-wrapper">
+         <img src="16713.jpg" class="image-tag">
+       </div>
+     </div>
+     </div>
+
+    <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-comment fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description description-text">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		 </div>
+		 <div>
+		   <div class="container-text">
+		     Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
+		   </div>
+		 </div>
+        </div>
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="material-icons icon fa-stack-1x fa-inverse">link</i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-menu-image" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu-image">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		 </div>
+		 <div class="mdl-  mdl-shadow--2dp through mdl-shadow--2dp image-card">
+		   <a href="https://www.youtube.com/" target="_blank">
+		   <div class ="bookmark-container">
+		   
+		    <div class="bookmark-image">
+		      <img src="girl.jpg" class="image-tag">  
+		    </div> 
+
+		    <div class="bookmark-description">
+		     <div class="bookmark-image-text">
+		       Material icons are beautifully crafted, delightful
+		     </div>
+		   </div>
+		   <div class="bookmark-image-domain">
+		    www.youtube.com
+		  </div>
+		</div>
+		</a>
+		</div>
+        </div>
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-file fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text-download" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text-download">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		  </div>
+		  <div class="container container-button">
+		      <button class="mdl-button mdl-js-button file-button">
+		      <i class="material-icons">&#xE2C4;</i>
+		        download
+		      </button>
+		  </div>
+        </div>
+
+         <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description description-link">
+	   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+	  </div>
+	    <div class="container container-link">
+	      <a href="https://www.google.co.in/webhp?hl=en" class="link-text" target="_blank">GOOGLE , </a>
+	      <a href="https://mail.google.com/mail/u/0/#inbox" class="link-text" target="_blank">GMAIL ,  </a>
+	      <a href="http://biztracker.in/" class="link-text" target="_blank">BIZ-TRACKER  , </a>
+	      <a href="https://github.com/" class="link-text" target="_blank">GITHUB</a>
+	    </div>
+        </div>
+
+
+
+
+     </div>
+ </div>
+</main>
+</div>
+</body>
+<script src="js/material.min.js"></script>
+<script src="js/test.js"></script>
+</html>
