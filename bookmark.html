@@ -1,26 +1,38 @@
-<html lang="en" class="mdl-js">
+<html>
 <head>
-  <title>bookmark</title>
-
-  <link rel="stylesheet" href="material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./material.indigo-pink.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="body-color">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Bookmark</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">     
-          <a class="mdl-navigation__link" href="">Logout</a>
-        </nav>
-      </div>
+<div class="image-preloader"></div>
+<div class="docs-layout mdl-layout mdl-js-layout">
+  <header class="docs-layout-header mdl-layout__header">
+    <div class="docs-navigation__container">
+      <nav class="docs-navigation mdl-navigation">
+        <a  class="mdl-navigation__link">bookmark</a>
+        <div class="spacer"></div>
+        <a class="mdl-navigation__link">Logout</a>
+      </nav>
+    </div>
+    <i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i>
+    <i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i>
+    </header>
 <style>
-  .mdl-new-card
+.docs-navigation .mdl-navigation__link
+{
+  font-size: 16px;
+}
+.mdl-textfield
+{
+  width: 500px;
+}
+.mdl-new-card
 {
   display: flex;
   display: -webkit-flex;
@@ -37,7 +49,6 @@
     border-radius: 2px;    
     box-sizing: border-box;
     width: 192px;
-    height: 230px;
     margin-top: 5%;
     margin-left: 2%;
 }
@@ -52,7 +63,8 @@
 .right-menu
 { 
   box-sizing: border-box;
-    float: right;
+  float: right;
+  padding-top: 9px;
 }
 .button-align
 {
@@ -76,20 +88,131 @@
 {
   background-color: black;
 }
+ul
+{
+  margin : 0 auto;
+  list-style-type: none;
+}
+.menu
+{
+  max-width: 150px;
+  padding-left: 25%;
+}
+.menu-list
+{
+  background-color: #ECECEC;
+  width: 90px;
+}
+li
+{
+  padding-left: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.menu-list-item:hover
+{
+  background-color: #ECECEC;
+}
+.menu
+{
+  max-width: 150px;
+  padding-left: 25%;
+}
+.list-last-item
+{
+  display: flex;
+}
+.list-last-text
+{
+  padding-left: 10px;
+}
+.search-field
+{
+  display: flex;
+}
+.top-right
+{
+  margin-left: auto;
+  padding-top: 15px;
+}
+.material-icons.md-30
+{
+  font-size: 30px;
+}
+.div1
+{
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+.from-text
+{
+  font-weight: bold;
+}
+.mdl-card
+{
+  width: 100%;
+}
+.timeline-card
+{
+  width: 100%;
+  height: 50px;
+}
+.grid-card-height
+{
+   height: 230px;
+}
+
+.info-icon
+{
+  padding-right: 5px;
+  padding-top: 15px;
+}
+.fa-stack
+{
+  line-height: 26px;
+}
+.fa-stack-2x
+{
+  font-size: 28px;
+}
+.info-middle-icon
+{
+  font-size: 11px;
+}
+
+.info-text
+{
+  display: inline-block;
+  color: #495358;
+}
+body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
+{
+  height: 0px;
+}
+.grid-card-text
+{
+  padding-top: 15px;
+  padding-left: 10px;
+  font-weight: bold;
+}
 </style>
 </header>
   <main class="mdl-layout__content">
   <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--3-col">
+      <div class="mdl-cell mdl-cell--2-col">
       </div>
-      <div class="mdl-cell mdl-cell--6-col">
+      <div class="mdl-cell mdl-cell--7-col">
       <div class="search-field">
       <div class="mdl-textfield mdl-js-textfield">
         <input class="mdl-textfield__input" type="text" id="sample1">
         <label class="mdl-textfield__label" for="sample1">Search</label>
       </div>
       <div class="top-right">
-      <i class="material-icons md-30">&#xE8F0;</i>
+      <i class="material-icons md-30" id="grid-view">&#xE8F0;</i>
+      <i class="material-icons md-30" style="display: none;" id="list-view">&#xE8EF;</i>
       </div>
       </div>
       </div>
@@ -97,9 +220,9 @@
       </div>
   </div>
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--3-col">
-      <div>
-      <ul class="list">
+      <div class="mdl-cell mdl-cell--2-col">
+      <div class="menu">
+      <ul>
         <li>Inbox</li>
         <li>Starred</li>
         <li class="menu-list">Important</li>
@@ -115,46 +238,19 @@
       </ul>
       </div>
       </div>
-     <!-- <div class="mdl-cell mdl-cell--6-col">
-      <div class="div1">
-       <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp img-card">
-       <div class="card-inner">
-       <img src="projectimg.jpg" class="project-img">
-      </div>
-      <div class="card-inner-bottom">
-      <div class="card-inner-text">
-        project
-      </div>
-      <div class="card-icon">
-     <nav class="nav-main">
-         <a href="#" class="material-icons nav-item ">&#xE5D4;</a>
-           <div class="nav-content">
-           <div class="nav-sub">
-             <ul>
-               <li>View</li>
-               <li>Select</li>
-               <li>Edit</li>
-               <li>Delete</li>
-             </ul>
-             </div>
-             </div>
-          </nav>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>-->
-      <div class="mdl-cell mdl-cell--6-col">
-    <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+     <div class="mdl-cell mdl-cell--7-col">
+     <div id="grid-view-card">
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
     <div class="card-inner">
-       <img src="projectimg.jpg" class="project-img">
+       <img src="1969877.jpg" class="project-img">
       </div>
     <div class="top-row">
     <div class="top-container">                       
             <div class="info-text">
-             <div class="from-text">
-              project
-            </div>
+               <div class="grid-card-text">
+                Bookmark
+               </div>
             </div>
     </div>
     <div class="right-menu">
@@ -170,14 +266,73 @@
     </div>
       </div>
      </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+          </ul>
+    </div>
+      </div>
+     </div>
+     </div>
+     </div>
+     <div id="list-view-card" style="display: none;">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+     <div class="top-row">
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-comment fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+     </div>
+
       <div class="mdl-cell mdl-cell--3-col">
       </div>
     </div>
   </main>
   </div>
-  
   <script src="js/material.min.js"></script>
-  <script src="js/jquery.min.js">
-  </script>
+  <script src="js/jquery.min.js"></script>
+  <script type="js/test.js"></script>
+  <script src="bookmark.js"></script>
 </body>
 </html>
