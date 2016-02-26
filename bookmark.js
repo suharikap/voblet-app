@@ -5,7 +5,6 @@ $(document).ready(function(){
 		$("#list-view-card").show();
 		$("#grid-view").hide();
 	});
-
 });
 $(document).ready(function(){
 	$("#list-view").click(function(){
@@ -15,5 +14,3 @@ $(document).ready(function(){
 		$("#grid-view").show();
 	});
 });
-
-

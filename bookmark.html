@@ -30,31 +30,31 @@
 }
 .mdl-textfield
 {
-  width: 500px;
+  width: 610px;
 }
 .mdl-new-card
 {
-  display: flex;
-  display: -webkit-flex;
+    display: flex;
+    display: -webkit-flex;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     overflow: hidden;
     background: #fff;
     border-radius: 2px;    
     box-sizing: border-box;
     width: 192px;
-    margin-top: 5%;
-    margin-left: 2%;
+    margin-top: 2%;
 }
 .top-row
 {
   width: 100%;
+  height: 85px;
 }
 .top-container
 {
@@ -64,7 +64,7 @@
 { 
   box-sizing: border-box;
   float: right;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 .button-align
 {
@@ -72,8 +72,8 @@
 }
 .card-inner
 {
-    height: 144px;
-    background-color: #fff;
+  height: 144px;
+  background-color: #fff;
 }
 .project-img
 {
@@ -96,7 +96,6 @@ ul
 .menu
 {
   max-width: 150px;
-  padding-left: 25%;
 }
 .menu-list
 {
@@ -116,7 +115,6 @@ li
 .menu
 {
   max-width: 150px;
-  padding-left: 25%;
 }
 .list-last-item
 {
@@ -133,18 +131,20 @@ li
 .top-right
 {
   margin-left: auto;
-  padding-top: 15px;
+  padding-top: 20px;
+  cursor: pointer;
+  padding-right: 55px;
 }
 .material-icons.md-30
 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .div1
 {
   width: 200px;
   height: 200px;
   float: left;
-  margin: 10px;
+  margin: 5px;
   margin-bottom: 50px;
 }
 .from-text
@@ -157,18 +157,16 @@ li
 }
 .timeline-card
 {
-  width: 100%;
-  height: 50px;
+  width: 95%;
 }
 .grid-card-height
 {
    height: 230px;
 }
-
 .info-icon
 {
   padding-right: 5px;
-  padding-top: 15px;
+  padding-top: 9px;
 }
 .fa-stack
 {
@@ -180,13 +178,14 @@ li
 }
 .info-middle-icon
 {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .info-text
 {
   display: inline-block;
   color: #495358;
+  width: 160px;
 }
 body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
 {
@@ -197,6 +196,24 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
   padding-top: 15px;
   padding-left: 10px;
   font-weight: bold;
+  font-size: 16px;
+}
+.hr-line
+{
+  margin: 0px;
+}
+.grid-card-bottom-text
+{
+  padding-top: 60px;
+  margin-left: 12px;
+  font-size: 13px;
+}
+.mdl-button
+{
+  color: #848482;
+  padding: 0 0px;
+  min-width: 0px;
+  margin-right: 2px;
 }
 </style>
 </header>
@@ -204,7 +221,7 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
   <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--2-col">
       </div>
-      <div class="mdl-cell mdl-cell--7-col">
+      <div class="mdl-cell mdl-cell--10-col">
       <div class="search-field">
       <div class="mdl-textfield mdl-js-textfield">
         <input class="mdl-textfield__input" type="text" id="sample1">
@@ -215,8 +232,6 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
       <i class="material-icons md-30" style="display: none;" id="list-view">&#xE8EF;</i>
       </div>
       </div>
-      </div>
-      <div class="mdl-cell mdl-cell--3-col">
       </div>
   </div>
     <div class="mdl-grid">
@@ -238,18 +253,46 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
       </ul>
       </div>
       </div>
-     <div class="mdl-cell mdl-cell--7-col">
+     <div class="mdl-cell mdl-cell--10-col">
      <div id="grid-view-card">
      <div class="div1">
      <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
     <div class="card-inner">
-       <img src="1969877.jpg" class="project-img">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="info-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
       </div>
     <div class="top-row">
     <div class="top-container">                       
             <div class="info-text">
                <div class="grid-card-text">
-                Bookmark
+                Font Awesome Examples
                </div>
             </div>
     </div>
@@ -258,12 +301,41 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
            <i class="material-icons">&#xE5D4;</i>
     </button>
           <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
-              <li class="mdl-menu__item">Some Action</li>
-              <li class="mdl-menu__item">Another Action</li>
-              <li disabled class="mdl-menu__item">Disabled Action</li>
-              <li class="mdl-menu__item">Yet Another Action</li>
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
           </ul>
     </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark Manager
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
       </div>
      </div>
      </div>
@@ -285,23 +357,261 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
            <i class="material-icons">&#xE5D4;</i>
     </button>
           <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
-              <li class="mdl-menu__item">Some Action</li>
-              <li class="mdl-menu__item">Another Action</li>
-              <li disabled class="mdl-menu__item">Disabled Action</li>
-              <li class="mdl-menu__item">Yet Another Action</li>
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
           </ul>
     </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+      </div>
+    <div class="top-row">
+    <div class="top-container">                       
+            <div class="info-text">
+               <div class="grid-card-text">
+                Bookmark
+               </div>
+            </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+              <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
       </div>
      </div>
      </div>
      </div>
      <div id="list-view-card" style="display: none;">
      <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
-     <div class="top-row">
+     <div>
     <div class="top-container">            
             <span class="fa-stack fa-lg info-icon">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-comment fa-stack-1x fa-inverse info-middle-icon"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+        <hr class="hr-line">
+     <div>
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+       <hr class="hr-line">
+     <div>
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+        <hr class="hr-line">
+     <div>
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+        <hr class="hr-line">
+     <div>
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+       <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+           <i class="material-icons">&#xE5D4;</i>
+       </button>
+             <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+              <li class="mdl-menu__item">Some Action</li>
+              <li class="mdl-menu__item">Another Action</li>
+              <li disabled class="mdl-menu__item">Disabled Action</li>
+              <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+            </div>
+        </div>
+        <hr class="hr-line">
+     <div>
+    <div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
             </span>           
             <div class="info-text">
              <div class="from-text">
@@ -322,11 +632,10 @@ body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
             </div>
         </div>
     </div>
-    </div>
      </div>
 
-      <div class="mdl-cell mdl-cell--3-col">
-      </div>
+      <!--<div class="mdl-cell mdl-cell--1-col">
+      </div>-->
     </div>
   </main>
   </div>
