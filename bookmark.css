@@ -1,0 +1,191 @@
+.docs-navigation .mdl-navigation__link
+{
+  font-size: 16px;
+}
+.mdl-layout__content
+{
+  width: 100%;
+}
+.mdl-textfield
+{
+  width: 610px;
+}
+.mdl-list-card
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;    
+    box-sizing: border-box;
+    width: 192px;
+    margin-top: 2%;
+}
+.list-top-row
+{
+  width: 100%;
+  height: 85px;
+}
+.top-list-container
+{
+  float: left;
+  padding-left: 5px;
+}
+.right-list-menu
+{ 
+  box-sizing: border-box;
+  float: right;
+}
+.button-align
+{
+  float: right;
+}
+.card-inner
+{
+  height: 144px;
+  background-color: #fff;
+}
+.project-img
+{
+  height: 100%;
+  width: 100%;
+}
+.mdl-layout
+{
+  overflow-y:hidden;
+}
+.mdl-layout__header
+{
+  background-color: black;
+}
+ul
+{
+  margin : 0 auto;
+  list-style-type: none;
+}
+.menu
+{
+  max-width: 150px;
+}
+.menu-list
+{
+  background-color: #ECECEC;
+}
+li
+{
+  font-weight: bold;
+  margin-top: 15px;
+}
+.menu-list-item:hover
+{
+  background-color: #ECECEC;
+}
+.menu
+{
+  max-width: 150px;
+}
+.list-last-item
+{
+  display: flex;
+}
+.list-last-text
+{
+  padding-left: 10px;
+}
+.search-field
+{
+  display: flex;
+}
+.top-right
+{
+  margin-left: auto;
+  padding-top: 20px;
+  cursor: pointer;
+  padding-right: 25px;
+}
+.material-icons.md-30
+{
+  font-size: 35px;
+}
+.div1
+{
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+.list-text
+{
+  font-weight: bold;
+}
+.mdl-card
+{
+  width: 100%;
+}
+.list-card
+{
+  width: 100%;
+}
+.bookmark-list-card
+{
+  height: 45px;
+  padding-top: 8px;
+}
+.grid-card-height
+{
+   height: 230px;
+}
+.list-icon
+{
+  font-size: 15px;
+}
+
+.list-middle-icon
+{
+  font-size: 12px;
+}
+
+.bookmark-card-text
+{
+  display: inline-block;
+  color: #495358;
+  width: 160px;
+  line-height: 17px;
+}
+body:not(.about) .docs-layout .docs-layout-header.mdl-layout__header
+{
+  height: 0px;
+}
+.grid-card-text
+{
+  padding-top: 15px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.hr-line
+{
+  margin: 0px;
+}
+.grid-card-bottom-text
+{
+  padding-top: 60px;
+  margin-left: 12px;
+  font-size: 13px;
+}
+.bookmark-button
+{
+  color: #848482;
+  padding: 0 0px;
+  min-width: 0px;
+  margin-right: 2px;
+}

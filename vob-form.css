@@ -1,0 +1,89 @@
+.form-card
+{
+	width: 100%;	
+	padding: 20px;
+	margin-top:60px;
+	margin-bottom: 60px;
+}
+.top-text
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+.form-icon
+{
+	padding-top: 10px;
+	color: #495358;
+}
+
+.material-icons.md-20
+{
+	font-size: 20px;
+	padding-right: 5px;
+}
+.middle-text
+{
+	display: flex;
+    font-size: 15px;
+}
+.first-text
+{
+	padding-top: 25px;
+	padding-right: 65px;
+}
+.second-text
+{
+	padding-top: 25px;
+	padding-right: 75px;
+}
+.third-text
+{
+	padding-top: 25px;
+	padding-right: 80px;
+}
+.mdl-button
+{
+	margin-bottom: 20px;
+}
+.bottom-text
+{
+	height: 50px;
+}
+.form-bottom
+{
+	display: flex;
+	height: 40px;
+}
+.bottom-button
+{
+   margin-left: auto;
+}
+.dropdown
+{
+	padding-top: 25px;
+}
+select
+{
+	width: 345px;
+}
+.from-text
+{
+	text-align: center;
+}
+.content-text
+{
+	text-align: center;
+}
+
+.form-textfield
+{
+	width: 100%;
+}
+.content-text-feild
+{
+	padding-top: 0px;
+}
+.header-icon
+{
+	color: white;
+}

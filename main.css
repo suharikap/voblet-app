@@ -1,0 +1,195 @@
+.mdl-new-card
+{
+	display: flex;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 200px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;    
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.top-row
+{
+	width: 100%;
+}
+.top-container
+{
+	float: left;
+}
+.right-menu
+{	
+	box-sizing: border-box;
+    float: right;
+}
+.button-align
+{
+	float: right;
+}
+.image-tag
+{
+  width: 100%;
+  height: 100%; 
+}
+.image-wrapper
+{
+	height: 300px;
+}
+.description
+{
+	padding-bottom: 20px;
+	font-size: 14px;
+	padding-left: 5px;
+	color: #000;
+}
+.timeline-card 
+{
+    width: 100%;
+    font-size: 12px;
+    padding: 12px;
+    max-height: 600px;
+}
+.from-text
+{
+	font-size: 14px;
+	font-weight: bold;	
+	padding-top: 5px;
+}
+.date-and-time
+{
+	color: #919499;
+	font-size: 13px;
+}
+.info-text
+{
+	display: inline-block;
+	color: #495358;
+	padding-left: 6px;
+}
+.mdl-layout
+{
+	overflow-y:hidden;
+}
+
+ul
+{
+	margin : 0 auto;
+	list-style-type: none;
+}
+.menu
+{
+	max-width: 150px;
+}
+.menu-list
+{
+	background-color: #ECECEC;
+}
+li
+{
+	padding-left: 20px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.menu-list-item:hover
+{
+	background-color: #ECECEC;
+}
+.info-icon
+{
+	margin-bottom: 30px;
+    font-size: 20px;
+    color: #000;
+}
+.info-middle-icon
+{
+	font-size: 14px;
+}
+.description-text
+{
+	font-weight: 500;
+}
+.container-text
+{
+	zoom:1;
+	font-size: 14px;
+	font-weight: normal;
+    line-height: 1.38;
+    overflow: hidden
+    direction: ltr;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.bookmark-container
+{
+  position: relative; 
+  height: 170px;
+  color: #495358;
+}
+.bookmark-image
+{
+  width:30%;
+  float: left;
+  height: 170px;
+}
+.image-tag
+ {
+  width: 100%;
+  height: 100%; 
+}
+.bookmark-image-domain
+{
+  margin-left: 10px;
+  padding-left: 30%;
+  position: absolute;
+  bottom: 10px;
+}
+.bookmark-description
+{
+	padding-left: 30%;
+	margin-left: 10px;
+	position: absolute;
+	padding-top: 10px;
+}
+.bookmark-image-text
+{
+	font-size: 16px;
+}
+.container-button
+{
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.file-button
+{
+	color: #495358;
+}
+.description-link
+{
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+.link-text
+{ 
+	text-decoration: none;
+	color: #495358;
+}
+.container-link
+{  
+	padding-left: 5px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.icon
+{
+	color: #fff;
+	padding-top: 8px;
+}

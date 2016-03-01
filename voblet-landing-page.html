@@ -12,22 +12,6 @@
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
-
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -37,12 +21,19 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  +
+  +++++
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="http://freehtml5.co/demos/crew/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -54,31 +45,16 @@
 	<link rel="stylesheet" href="http://freehtml5.co/demos/crew/css/owl.theme.default.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="http://freehtml5.co/demos/crew/css/bootstrap.css">
-
-	<!-- 
-	Default Theme Style 
-	You can change the style.css (default color purple) to one of these styles
-	
-	1. pink.css
-	2. blue.css
-	3. turquoise.css
-	4. orange.css
-	5. lightblue.css
-	6. brown.css
-	7. green.css
-
-	-->
 	<link rel="stylesheet" href="http://freehtml5.co/demos/crew/css/style.css">
 
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="http://freehtml5.co/demos/crew/css/style.css">
-	<!-- End demo purposes only -->
-
-
+	<link rel="stylesheet" href="vob-features.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="bookmark.css">
+	<link rel="stylesheet" href="vob-form.css">
+	<link rel="stylesheet" href="vob-faq.css">
 	<style>
-	/* For demo purpose only */
-	
-	/* For Demo Purposes Only ( You can delete this anytime :-) */
 	#colour-variations {
 		padding: 10px;
 		-webkit-transition: 0.5s;
@@ -179,17 +155,17 @@
 		text-decoration: none;
 		outline: none;
 	}
+	.features-cell
+	{
+		margin-right: 60px;
+	}
+	label
+	{
+		margin-bottom: 0px;
+	}
 	</style>
-	<!-- End demo purposes only -->
-
-
-	<!-- Modernizr JS -->
 	<script src="http://freehtml5.co/demos/crew/js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+	
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -205,11 +181,16 @@
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 		            <li><a href="#" data-nav-section="about"><span>About</span></a></li>
+		            
 		            <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
 		            <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
 		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
 		            <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
 		            <li><a href="#" data-nav-section="press"><span>Press</span></a></li>
+		            <li><a href="#" data-nav-section="main"><span>Main</span></a></li>
+		            <li><a href="#" data-nav-section="bookmark"><span>Bookmark</span></a></li>
+		            <li><a href="#" data-nav-section="form"><span>Form</span></a></li>
+		            <li><a href="#" data-nav-section="faq"><span>Faq</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
@@ -407,6 +388,8 @@
 		</div>
 	</div>
 	
+
+
 	<div id="fh5co-features" data-section="features">
 		<div class="container">
 			<div class="row">
@@ -420,59 +403,69 @@
 				</div>
 			</div>
 			<div class="row row-bottom-padded-sm">
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-present"></i></div>
-					<div class="fh5co-desc">
-						<h3>100% Free</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-eye"></i></div>
-					<div class="fh5co-desc">
-						<h3>Retina Ready</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>
-				</div>
-				<div class="clearfix visible-sm-block visible-xs-block"></div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-crop"></i></div>
-					<div class="fh5co-desc">
-						<h3>Fully Responsive</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-speedometer"></i></div>
-					<div class="fh5co-desc">
-						<h3>Lightweight</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>	
-				</div>
-				<div class="clearfix visible-sm-block visible-xs-block"></div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-heart"></i></div>
-					<div class="fh5co-desc">
-						<h3>Made with Love</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-					<div class="fh5co-icon"><i class="icon-umbrella"></i></div>
-					<div class="fh5co-desc">
-						<h3>Eco Friendly</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-					</div>
-				</div>
-				<div class="clearfix visible-sm-block visible-xs-block"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
-					<a href="#" class="btn btn-primary btn-block">Learn More</a>
-				</div>
-			</div>
-		</div>
-	</div>
+			<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--1-col features-cell">
+  </div>
+  <div class="mdl-cell mdl-cell--10-col fh5co-service to-animate">
+    <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp ">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+
+     
+     <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+
+
+     <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+
+     <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+     <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+
+     <div class="features-card">
+     <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+       <i class="material-icons md-27">&#xE030;</i>
+       <div class="card-text">
+       Get movie showtimes, trailers, and reviews
+       </div>
+     </div>
+     </div>
+     </div>
+     <div class="mdl-cell mdl-cell--1-col">
+  </div>
+  </div>
+				
 
 	<div id="fh5co-testimonials" data-section="testimonials">		
 		<div class="container">
@@ -490,7 +483,7 @@
 				<div class="col-md-4">
 					<div class="box-testimony to-animate">
 						<blockquote>
-							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
 							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
 						</blockquote>
 						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
@@ -675,6 +668,751 @@
 		</div>
 	</div>
 	
+     
+     <div data-section="main">
+     <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">  
+        <div class="menu">
+       <ul>
+        <li>Inbox</li>
+        <li>Starred</li>
+        <li class="menu-list">Important</li>
+        <li class="menu-list-item">Inbox</li>
+        <li>Starred</li>
+        <li>Important</li>
+      </ul>
+      </div>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--7-col">
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+       Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
+     </div>
+     <div>
+       <div class="image-wrapper">
+         <img src="16713.jpg" class="image-tag">
+       </div>
+     </div>
+     </div>
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-comment fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-menu" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description description-text">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		 </div>
+		 <div>
+		   <div class="container-text">
+		     Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
+		   </div>
+		 </div>
+        </div>
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="material-icons icon fa-stack-1x fa-inverse">link</i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-menu-image" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-menu-image">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		 </div>
+		 <div class="mdl-  mdl-shadow--2dp through mdl-shadow--2dp image-card">
+		   <a href="https://www.youtube.com/" target="_blank">
+		   <div class ="bookmark-container">
+		   
+		    <div class="bookmark-image">
+		      <img src="girl.jpg" class="image-tag">  
+		    </div> 
+
+		    <div class="bookmark-description">
+		     <div class="bookmark-image-text">
+		       Material icons are beautifully crafted, delightful
+		     </div>
+		   </div>
+		   <div class="bookmark-image-domain">
+		    www.youtube.com
+		  </div>
+		</div>
+		</a>
+		</div>
+        </div>
+       <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-file fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text-download" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text-download">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description">
+		   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+		  </div>
+		  <div class="container container-button">
+		      <button class="mdl-button mdl-js-button file-button">
+		      <i class="material-icons">&#xE2C4;</i>
+		        download
+		      </button>
+		  </div>
+        </div>
+
+        <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp timeline-card">
+		<div class="top-row">
+		<div class="top-container">            
+            <!--<i class="material-icons top-bar-left md-39" >&#xE853;</i>-->
+            <span class="fa-stack fa-lg info-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse info-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="from-text">
+              From Samsung
+            </div>
+            <div class="date-and-time">
+              Sept 11,  2015
+            </div>
+            </div>
+            </div>
+            <div class="right-menu">
+			 <button id="timeline-text1" class="mdl-button mdl-js-button timeline-button button-align">
+			     <i class="material-icons">&#xE5D4;</i>
+			 </button>
+		         <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-text1">
+		          <li class="mdl-menu__item">Some Action</li>
+		          <li class="mdl-menu__item">Another Action</li>
+		          <li disabled class="mdl-menu__item">Disabled Action</li>
+		          <li class="mdl-menu__item">Yet Another Action</li>
+		        </ul>
+            </div>
+        </div>
+        <div class="description description-link">
+	   Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. 
+	  </div>
+	    <div class="container container-link">
+	      <a href="https://www.google.co.in/webhp?hl=en" class="link-text" target="_blank">GOOGLE , </a>
+	      <a href="https://mail.google.com/mail/u/0/#inbox" class="link-text" target="_blank">GMAIL ,  </a>
+	      <a href="http://biztracker.in/" class="link-text" target="_blank">BIZ-TRACKER  , </a>
+	      <a href="https://github.com/" class="link-text" target="_blank">GITHUB</a>
+	    </div>
+	    </div>
+    </div>
+     </div>
+    </main>
+     </div>
+
+     <div data-section="bookmark">
+     <main class="mdl-layout__content">
+  <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">
+      </div>
+      <div class="mdl-cell mdl-cell--9-col">
+      <div class="search-field">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1">
+        <label class="mdl-textfield__label" for="sample1">Search</label>
+      </div>
+      <div class="top-right">
+      <i class="material-icons md-30" id="grid-view">&#xE8F0;</i>
+      <i class="material-icons md-30" style="display: none;" id="list-view">&#xE8EF;</i>
+      </div>
+      </div>
+      </div>
+  </div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col">
+      <div class="menu">
+      <ul>
+        <li>Inbox</li>
+        <li>Starred</li>
+        <li class="menu-list">Important</li>
+        <li class="menu-list-item">Inbox</li>
+        <li>Starred</li>
+        <li>Important</li>
+        <li class="list-last-text">
+        <div class="list-last-item">
+        <i class="material-icons">&#xE146;</i>
+        <div>Add new</div>
+        </div>
+        </li>
+      </ul>
+      </div>
+      </div>
+     <div class="mdl-cell mdl-cell--9-col">
+     <div id="grid-view-card">
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-bookmark-text1" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text1">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-bookmark-text2" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text2">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+  <div class="right-menu">
+    <button id="timeline-bookmark-text3" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text3">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+   <div class="right-menu">
+    <button id="timeline-bookmark-text4" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text4">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+   <div class="right-menu">
+    <button id="timeline-bookmark-text5" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text5">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     <div class="div1">
+     <div class="mdl-new-card mdl-shadow--2dp through mdl-shadow--2dp grid-card-height">
+    <div class="card-inner">
+       <img src="green-color.jpg" class="project-img">
+    </div>
+    <div class="top-row">
+    <div class="top-container">                       
+          <div class="bookmark-card-text">
+              <div class="grid-card-text">
+                Font Awesome Examples
+              </div>
+          </div>
+    </div>
+    <div class="right-menu">
+    <button id="timeline-bookmark-text6" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text6">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+    <div class="grid-card-bottom-text">www.google.com</div>
+      </div>
+     </div>
+     </div>
+     </div>
+      <div id="list-view-card" style="display: none;">
+     <div class="mdl-list-card mdl-shadow--2dp through mdl-shadow--2dp list-card">
+     <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+       <div class="right-menu">
+    <button id="timeline-bookmark-text7" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text7">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+         <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+           <div class="right-menu">
+    <button id="timeline-bookmark-text8" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text8">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+         <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+    <button id="timeline-bookmark-text9" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text9">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+        <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+           <div class="right-menu">
+    <button id="timeline-bookmark-text0" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text0">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+        <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+    <button id="timeline-bookmark-text01" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text01">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+        <div class="bookmark-list-card">
+    <div class="top-list-container">            
+            <span class="fa-stack fa-lg list-icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse list-middle-icon"></i>
+            </span>           
+            <div class="info-text">
+             <div class="list-text">
+             Bookmark
+            </div>
+            </div>
+     </div>
+            <div class="right-menu">
+    <button id="timeline-bookmark-text02" class="mdl-button mdl-js-button timeline-button button-align bookmark-button">
+           <i class="material-icons">&#xE5D4;</i>
+    </button>
+          <ul class="mdl-menu mdl-menu--bottom-left  mdl-js-menu" for="timeline-bookmark-text02">
+            <li class="mdl-menu__item">View</li>
+              <li class="mdl-menu__item">Edit</li>
+              <li class="mdl-menu__item">Select</li>
+              <li class="mdl-menu__item">Delete</li>
+          </ul>
+    </div>
+        </div>
+        <hr class="hr-line">
+    </div>
+     </div>
+     </div>
+     </div>
+     </main>
+     </div>
+
+     <div data-section="form">
+     <main class="mdl-layout__content">
+   <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--3-col">
+  </div>
+  <div class="mdl-cell mdl-cell--5-col">
+    <div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp form-card">
+      <div class="top-text">                     
+       New Message
+    </div>
+    
+    <div class="middle-text">
+      <div class="first-text">
+        To
+      </div>
+       <div class="dropdown">
+              <select>
+                <option value="volvo">0</option>
+                <option value="saab">1</option>
+                <option value="saab">2</option>
+                <option value="saab">3</option>
+              </select>          
+            </div>
+    </div>
+    <div class="from-text">
+      <div class="mdl-textfield mdl-js-textfield form-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1">
+       <label class="mdl-textfield__label" for="sample1">From</label>
+      </div>
+    </div>
+    <div class="content-text">
+      <div class="mdl-textfield mdl-js-textfield content-text-feild form-textfield">
+        <input class="mdl-textfield__input bottom-text" type="text" id="sample1">
+        <label class="mdl-textfield__label text-label" for="sample1">Text</label>
+      </div>
+    </div>
+    <div class="form-bottom">
+    <div class="form-icon">
+      <i class="material-icons md-20">&#xE23C;</i>
+      <i class="material-icons md-20">&#xE2BC;</i>
+      <i class="material-icons md-20">&#xE157;</i>
+      <i class="material-icons md-20">&#xE87C;</i>
+    </div>
+    <div class="bottom-button">
+      <button class="mdl-button mdl-js-button">
+        Save
+      </button>
+      <button class="mdl-button mdl-js-button">
+        Close
+      </button>
+    </div>
+    </div>
+</div>
+   </div>
+
+<div class="mdl-cell mdl-cell--1-col">
+</div>
+</div>
+</main>
+     </div>
+
+
+     <div data-section="faq">
+     <main class="mdl-layout__content">
+ <div class="mdl-grid faq-grid">
+    <div class="mdl-cell mdl-cell--3-col">
+    <div class="left-text">
+    CONTENTS
+    </div>
+    </div>
+    <div class="mdl-cell mdl-cell--5-col">
+    <div class="faq-middle-text">
+    <a href="#bottom">Where should I use Material Design Lite (MDL)?
+    </a>
+	<div>What CSS naming conventions does MDL use?
+	</div>
+	<div>Does MDL support progressive enhancement?
+	</div>
+	<div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    <div>Where should I use Material Design Lite (MDL)?
+    </div>
+	<div>What CSS naming conventions does MDL use?
+	</div>
+	<div>Does MDL support progressive enhancement?
+	</div>
+	<div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    <div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    <div>Where should I use Material Design Lite (MDL)?
+    </div>
+	<div>What CSS naming conventions does MDL use?
+	</div>
+	<div>Does MDL support progressive enhancement?
+	</div>
+	<div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    <div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    <div>Where should I use Material Design Lite (MDL)?
+    </div>
+	<div>What CSS naming conventions does MDL use?
+	</div>
+	<div>Does MDL support progressive enhancement?
+	</div>
+	<div>Which browsers does MDL support?
+	</div>
+    <div>Does MDL play nicely with Polymer?
+    </div>
+    </div>
+
+</div>
+<div class="mdl-cell mdl-cell--0-col">
+ </div>
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col">
+    </div>
+    <div class="mdl-cell mdl-cell--5-col">
+    <div id="bottom">
+<p class="bottom-top-text">
+WHERE SHOULD I USE MATERIAL DESIGN LITE (MDL)?
+</p>
+<p>
+If you’re interested in a Material Design experience using vanilla Web technologies like CSS, JavaScript and HTML, MDL might be a useful option to consider. We optimise for websites heavy on content, such as marketing pages, articles, blogs and general web content that isn’t particularly app-y. If you just want to pick some colors, customise a template and ship a Material experience, we try to help make that process simpler.
+
+Whilst there exist several community-driven options for Material Design, our experience has shown that there are several gaps in the Material specification when it comes to the web. Rather than guessing how these gaps should be filled (something we know the community has struggled with), we’ve opted for a close collaboration with the Material Design team to provide a Material library that is both spec compatible for today and provides guidance on aspects of the spec still being evolved.
+
+</p>
+</div>
+</div>
+    <div class="mdl-cell mdl-cell--0-col">
+    </div>
+</div>
+</main>
+
+     </div>
+
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
@@ -700,7 +1438,7 @@
 	</footer>
 	
 	
-	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	<!-- For demo purposes Only ( You may delete this anytime :-)
 	<div id="colour-variations">
 		<a class="option-toggle"><i class="icon-gear"></i></a>
 		<h3>Preset Colors</h3>
@@ -714,12 +1452,14 @@
 			<li><a href="javascript: void(0);" data-theme="brown"></a></li>
 			<li><a href="javascript: void(0);" data-theme="green"></a></li>
 		</ul>
-	</div>
+	</div>-->
 	<!-- End demo purposes only -->
 
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/material.min.js"></script>
+    <script src="js/test.js"></script>
 	<!-- jQuery Easing -->
 	<script src="http://freehtml5.co/demos/crew/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -731,6 +1471,7 @@
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="http://freehtml5.co/demos/crew/js/jquery.style.switcher.js"></script>
+	<script src="bookmark.js"></script>
 	<script>
 	$(function(){
 		$('#colour-variations ul').styleSwitcher({
