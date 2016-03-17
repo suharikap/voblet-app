@@ -1,6 +1,13 @@
 .verticalLine 
 {
-    border-left: thick solid #616161;
+    border-left: thick solid #E0E0E0;
+    border-left-width: 2px;
+}
+.help-verticalLine
+{
+	border-left: thick solid #fff;
+	border-left-width: 3px;
+
 }
 .top-field
 {
@@ -32,7 +39,6 @@
 .mdl-card
 {
    width: 100%;
-   margin-top: 50px;
    border-radius: 0px;
 }
 .card
@@ -80,7 +86,7 @@
 }
 .top-left-text
 {
-	padding-left: 100px;
+	padding-left: 70px;
 	font-size: 20px;
 }
 .top-bar-right
@@ -115,4 +121,47 @@
 .arrow-icon
 {
 	margin-left: auto;
+}
+.ul-list
+{
+	list-style-type: none;
+    padding-left: 0px;
+}
+.help
+{
+	padding-left: 10px;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 13px;
+	
+}
+.help-text
+{
+	padding-left: 15px;
+	line-height: 35px;
+	font-size: 13px;
+	
+}
+.help-grid
+{
+	padding-left: 20px;
+	color: #fff;
+}
+.card-text
+{
+	display: flex;
+	color: #4285F4;
+}
+.drop-down
+{
+	display: flex;
+	color: #4285F4;
+}
+.drop-down-text
+{
+	padding-left: 20px;
+}
+.card-middle-text
+{
+	font-size: 14px;
 }
