@@ -55,16 +55,6 @@
 	border-width: 1px;
 
 }
-.mdl-textfield__input
-{
-	border-bottom: 0px;
-	padding-left: 10px;
-}
-.mdl-textfield
-{
-	padding: 0px;
-	width: 500px;
-}
 .search-button-card
 {
 	width: 60px;
@@ -168,6 +158,50 @@
 {
 	font-size: 14px;
 }
+.search-flex
+{
+	display: flex;
+}
+.close-icon
+{
+	padding-top: 20px;
+}
+.search-button-min
+{
+	width: 60px;
+	min-height: 26px;
+	background-color: #4285F4;
+	margin: 0px;
+	margin-left: auto;
+}
+.search-card-min
+{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.top-field-min
+{
+	display: none;
+}
+.min-field
+{
+	display: none;
+}
+.search-card-min
+{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.search-textfield
+{
+	padding: 0px;
+	width: 500px;
+}
+.search-input
+{
+	border-bottom: 0px;
+	padding-left: 10px;
+}
 @media (max-width: 840px)
 {
 	.top-bar
@@ -207,24 +241,46 @@
 }
 @media (max-width: 400px)
 {
-	.search-card
-	{
-		width: 80px;
-		padding: 0px;
-	}
-	.top-field
-	{
-		margin-top: 20px;
-	    margin-bottom: 20px;
-	    margin-left: 5px;
-	}
-	.top-field-text
-	{
-		margin-right: 10px;
-	}
 	.help-grid
 	{
 		background-color: #4285F4;
 		width: 100%; 
+	}
+	.search-card
+	{
+		display: none;
+	}
+	.top-field
+	{
+	    display: none;
+	}
+	.top-field-text
+	{
+		margin-right: 10px;	
+	}
+	.search-minimize
+   {
+		display: inline;
+   }
+   .search-button-card 
+   {
+   	  display: none;
+   }
+   .min-field
+	{
+		display: inline;
+	}
+	.top-field-min
+	{
+		display: flex;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;	
+		margin-bottom: 20px;
+	}
+	.top-field-text-min
+	{
+		
+		font-size: 25px;
 	}
 }

@@ -39,4 +39,12 @@ $(document).ready(function(){
 		$("#drop-down4").hide();
 		$("#list4").slideToggle();
     });
+    $(".search-minimize").click(function(){
+		$(".search-flex").show();
+		$(".top-field-min").hide();
+	});
+   $(".close-icon").click(function(){
+   	   $(".search-flex").hide();
+   	   $(".top-field-min").show();
+   });
 });
