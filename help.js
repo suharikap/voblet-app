@@ -59,5 +59,12 @@ $(document).ready(function(){
 		$("#drop-down-text6").hide();
 		$("#card-text6").show();
 	});
-   
+	$(".search-minimize").click(function(){
+		$(".search-flex").show();
+		$(".top-field-min").hide();
+	});
+   $(".close-icon").click(function(){
+   	   $(".search-flex").hide();
+   	   $(".top-field-min").show();
+   });
 });

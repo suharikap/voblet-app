@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+<style >
+.top-field
+{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+.top-field-text
+{
+	margin-right: 130px;
+	padding-top: 5px;
+	font-size: 25px;
+}
+
+.search-button-card
+{
+	width: 60px;
+	min-height: 26px;
+	background-color: #4285F4;
+	margin: 0px;
+}
+.search-icon
+{
+	color: #fff;
+	padding-left: 20px;
+	padding-top: 2px;
+}
+
+.search-button-min
+{
+	width: 60px;
+	min-height: 26px;
+	background-color: #4285F4;
+	margin: 0px;
+	margin-left: auto;
+}
+.search-card-min
+{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.search-flex
+{
+	display: flex;
+}
+.close-icon
+{
+	padding-top: 20px;
+}
+.search-textfield
+{
+	padding: 0px;
+	width: 500px;
+}
+.search-button-card
+{
+	width: 60px;
+	min-height: 26px;
+	background-color: #4285F4;
+	margin: 0px;
+}
+.search-card
+{
+	width: 500px;
+	min-height: 26px;
+	margin: 0px;
+	border-color: #616161;
+	border-style: solid;
+	border-width: 1px;
+
+}
+.top-field-min
+{
+	display: none;
+}
+.min-field
+{
+	display: none;
+}
+@media (max-width: 700px)
+{
+	.top-bar
+	{
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.icon
+	{
+		padding-right: 20px;
+	}
+	.top-bar-right
+	{
+		padding-top: 20px;
+	}
+	.search-card
+	{
+		width: 230px;
+		padding: 0px;
+	}
+	.top-field
+	{
+		margin-top: 20px;
+	    margin-bottom: 20px;
+	    margin-left: 5px;
+	}
+	.top-field-text
+	{
+		margin-right: 10px;
+	}
+	
+}
+@media (max-width: 400px)
+{
+	.search-card
+	{
+		
+		display: none;
+	}
+	.top-field
+	{
+	    display: none;
+	}
+	.top-field-text
+	{
+		margin-right: 10px;
+		
+	}
+
+	.search-minimize
+   {
+		display: inline;
+   }
+   .search-button-card 
+   {
+   	  display: none;
+   }
+
+   .min-field
+{
+	display: inline;
+}
+.top-field-min
+{
+	display: flex;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.top-field-text-min
+{
+	
+	font-size: 25px;
+}
+  
+}
+</style>
+</head>
+<body>
+
+
+
+		<div class="top-field">
+	   <div class="top-field-text">
+	   	Google
+	   </div>
+	    <div class="mdl-card  search-card">
+		  <div class="mdl-textfield search-textfield">
+		    <input class="mdl-textfield__input search-input" type="text" id="sample1">
+		    <label class="mdl-textfield__label" for="sample1">Text...</label>
+		  </div>
+	    </div>
+	    <div class="mdl-card search-button-card">
+	    	<i class="material-icons search-icon">&#xE8B6;</i>
+	    </div>
+	    </div>
+        <div class="min-field">
+        <div class="top-field-min">
+        <div class="top-field-text-min">
+        Google
+       </div>
+        <div class="mdl-card search-button-min search-minimize">
+            <i class="material-icons search-icon">&#xE8B6;</i>
+        </div>
+        </div>
+        
+        <div class="search-flex" style="display: none;">
+          <div class="mdl-textfield mdl-js-textfield search-card-min">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Search..</label>
+          </div>
+          <i class="material-icons close-icon">&#xE5CD;</i>
+        </div>
+        </div>
+        
+
+
+</body>
+<script src="js/material.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/test.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".search-minimize").click(function(){
+		$(".search-flex").show();
+		$(".top-field-min").hide();
+	});
+   $(".close-icon").click(function(){
+   	   $(".search-flex").hide();
+   	   $(".top-field-min").show();
+   });
+});
+</script>
+</html>

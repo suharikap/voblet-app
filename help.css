@@ -100,12 +100,12 @@ ul
 	border-width: 1px;
 
 }
-.mdl-textfield__input
+.search-input
 {
 	border-bottom: 0px;
 	padding-left: 10px;
 }
-.mdl-textfield
+.search-textfield
 {
 	padding: 0px;
 	width: 500px;
@@ -117,12 +117,14 @@ ul
 	margin-bottom: 20px;
 	margin-left: 30px;
 }
+
 .top-field-text
 {
 	margin-right: 130px;
 	padding-top: 5px;
 	font-size: 25px;
 }
+
 .search-button-card
 {
 	width: 60px;
@@ -135,6 +137,36 @@ ul
 	color: #fff;
 	padding-left: 20px;
 	padding-top: 2px;
+}
+
+.search-flex
+{
+	display: flex;
+}
+.close-icon
+{
+	padding-top: 20px;
+}
+.search-button-min
+{
+	width: 60px;
+	min-height: 26px;
+	background-color: #4285F4;
+	margin: 0px;
+	margin-left: auto;
+}
+.search-card-min
+{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.top-field-min
+{
+	display: none;
+}
+.min-field
+{
+	display: none;
 }
 @media (max-width: 700px)
 {
@@ -172,17 +204,39 @@ ul
 {
 	.search-card
 	{
-		width: 80px;
-		padding: 0px;
+		display: none;
 	}
 	.top-field
 	{
-		margin-top: 20px;
-	    margin-bottom: 20px;
-	    margin-left: 5px;
+	    display: none;
 	}
 	.top-field-text
 	{
-		margin-right: 10px;
+		margin-right: 10px;	
+	}
+	.search-minimize
+   {
+		display: inline;
+   }
+   .search-button-card 
+   {
+   	  display: none;
+   }
+   .min-field
+	{
+		display: inline;
+	}
+	.top-field-min
+	{
+		display: flex;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;	
+		margin-bottom: 20px;
+	}
+	.top-field-text-min
+	{
+		
+		font-size: 25px;
 	}
 }
