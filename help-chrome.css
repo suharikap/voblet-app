@@ -29,13 +29,7 @@
 	background-color: #4285F4;
 	margin: 0px;
 }
-.search-icon
-{
-	color: #fff;
-	padding-left: 20px;
-	padding-top: 2px;
 
-}
 .mdl-card
 {
    width: 100%;
@@ -62,12 +56,7 @@
 	background-color: #4285F4;
 	margin: 0px;
 }
-.search-icon
-{
-	color: #fff;
-	padding-left: 20px;
-	padding-top: 2px;
-}
+
 .top-bar
 {
 	display: flex;
@@ -91,11 +80,7 @@
 {
 	display: flex;
 }
-.background-color
-{
-	background-color: #4285F4;
-	height: 350px;
-}
+
 .icon
 {
 	padding-left: 10px;
@@ -202,6 +187,100 @@
 	border-bottom: 0px;
 	padding-left: 10px;
 }
+
+
+.search-icon
+{
+  margin-left: auto;
+}
+.search-click
+{
+  margin-left: auto;
+  display: flex;
+}
+.top
+{
+  display: flex;
+  margin-top:20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mdl-textfield__label
+{
+	top: 3px;
+	height: 45px;
+}
+.mdl-textfield__input
+{
+	padding: 4px 0;
+}
+.mdl-textfield
+{
+	padding: 0px 0;
+	padding-bottom: 11px;
+	width: 200px;
+	color: black;
+}
+
+.mdl-button
+{
+	border-radius: 50%;
+	padding: 0px;
+	min-width: 35px;
+}
+.mdl-layout.is-small-screen .mdl-layout--large-screen-only
+{
+	display: flex;
+}
+.mdl-layout--fixed-header>.mdl-layout__header
+{
+	background-color: white;
+}
+.mdl-layout__header .mdl-layout__drawer-button
+{
+	color: #000;
+	margin-bottom: 0px;
+	margin-top: 16px;
+}
+.mdl-layout-title
+{
+	color: #000;
+	margin-bottom: 6px;
+}
+.mdl-layout__header
+{
+	height: 64px;
+}
+@media screen and (max-width: 1024px)
+{
+.mdl-layout__header-row {
+    height: 64px;
+}
+}
+.mdl-layout__drawer-button
+{
+	margin-bottom: 0px;
+	margin-top: 16px;
+}
+.middle-card
+{
+	 margin-top: -290px;
+    z-index: 2;
+    position: relative;  
+
+}
+.background-color
+{
+	background-color: #4285F4;
+    height: 350px;
+      width:100%;
+       z-index: 1;
+        position: relative;   
+}
+
+
+
+
 @media (max-width: 840px)
 {
 	.top-bar
@@ -209,28 +288,13 @@
 		display: inline-block;
 		padding-left: 20px;
 	}
-	.icon
-	{
-		padding-right: 20px;
-	}
 	.top-bar-right
 	{
 		padding-top: 20px;
 	}
-	.search-card
+	.icon
 	{
-		width: 230px;
-		padding: 0px;
-	}
-	.top-field
-	{
-		margin-top: 20px;
-	    margin-bottom: 20px;
-	    margin-left: 5px;
-	}
-	.top-field-text
-	{
-		margin-right: 10px;
+		padding-right: 20px;
 	}
 	.help-grid
 	{
@@ -246,41 +310,5 @@
 		background-color: #4285F4;
 		width: 100%; 
 	}
-	.search-card
-	{
-		display: none;
-	}
-	.top-field
-	{
-	    display: none;
-	}
-	.top-field-text
-	{
-		margin-right: 10px;	
-	}
-	.search-minimize
-   {
-		display: inline;
-   }
-   .search-button-card 
-   {
-   	  display: none;
-   }
-   .min-field
-	{
-		display: inline;
-	}
-	.top-field-min
-	{
-		display: flex;
-		margin-top: 20px;
-		margin-left: 10px;
-		margin-right: 10px;	
-		margin-bottom: 20px;
-	}
-	.top-field-text-min
-	{
-		
-		font-size: 25px;
-	}
+	
 }

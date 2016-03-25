@@ -13,38 +13,48 @@
   <link rel="stylesheet" type="text/css" href="help-chrome.css">
 </head>
 <body>
-	<div class="top-field">
-	   <div class="top-field-text">
-	   	Google
-	   </div>
-	    <div class="mdl-card  search-card">
-		  <div class="mdl-textfield search-textfield ">
-		    <input class="mdl-textfield__input search-input" type="text" id="sample1">
-		    <label class="mdl-textfield__label" for="sample1">Text...</label>
-		  </div>
-	    </div>
-	    <div class="mdl-card search-button-card">
-	    	<i class="material-icons search-icon">&#xE8B6;</i>
-	    </div>	
-	</div>
-   <div class="min-field">
-        <div class="top-field-min">
-        <div class="top-field-text-min">
-        Google
-       </div>
-        <div class="mdl-card search-button-min search-minimize">
-            <i class="material-icons search-icon">&#xE8B6;</i>
-        </div>
-        </div>
-        <div class="search-flex" style="display: none;">
-          <div class="mdl-textfield mdl-js-textfield search-card-min">
-            <input class="mdl-textfield__input" type="text" id="sample1">
-            <label class="mdl-textfield__label" for="sample1">Search..</label>
-          </div>
-          <i class="material-icons close-icon">&#xE5CD;</i>
-        </div>
-        </div>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Google</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <div class="search-icon ">
+    <button class="mdl-button mdl-js-button">
+    <i class="material-icons">&#xE8B6;</i>
+    </button>
+    </div>
+    <div class="search-click" style="display: none;">
+    <button class="mdl-button mdl-js-button">
+    <i class="material-icons search-click-icon">&#xE8B6;</i>
+    </button>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Search...</label>
+  </div>
+    </div>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Help</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Download and install Google Chrome</a>
+      <a class="mdl-navigation__link" href="">Search the web on Chrome</a>
+      <a class="mdl-navigation__link" href="">Fix "Aw, Snap!" page crashes</a>
+      <a class="mdl-navigation__link" href="">Fix file download errors in Google Chrome</a>
+    </nav>
+  </div>
+  
+</div>
+    
+
     <div class="background-color">
+    </div>
+    <div class="middle-card">
     <div class="top-bar">
     <div class="top-bar-left">Chrome Help</div>
     <div class="top-bar-right">
@@ -215,6 +225,15 @@
     </div>
     </div>
     </div>
+      <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+          </div>
+        </footer>
     </body>
     <script src="js/material.min.js"></script>
     <script src="js/jquery.min.js"></script>

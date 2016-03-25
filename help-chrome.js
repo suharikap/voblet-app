@@ -47,4 +47,14 @@ $(document).ready(function(){
    	   $(".search-flex").hide();
    	   $(".top-field-min").show();
    });
+   $(".search-icon").click(function(){
+      $(".search-click").show();
+      $(".search-icon").hide();
+      $(".search-click-icon").show();
+    });
+    $(".search-click-icon").click(function(){
+      $(".search-click").hide();
+      $(".search-click-icon").hide();
+      $(".search-icon").show();
+    });
 });

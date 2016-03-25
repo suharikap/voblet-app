@@ -30,7 +30,7 @@ hr
 {
 	margin: 0px;
 }
-ul
+.list
 {
 	list-style-type: none;
 	padding-left: 70px;
@@ -56,11 +56,7 @@ ul
 {
   background-color: #F5F5F5;
 }
-.background-color
-{
-	background-color: #4285F4;
-	height: 350px;
-}
+
 .top-bar
 {
 	display: flex;
@@ -120,9 +116,11 @@ ul
 
 .top-field-text
 {
-	margin-right: 130px;
-	padding-top: 5px;
+	
 	font-size: 25px;
+	padding-top: 5px;
+	margin-bottom: 25px;
+	padding-left: 10px;
 }
 
 .search-button-card
@@ -132,12 +130,7 @@ ul
 	background-color: #4285F4;
 	margin: 0px;
 }
-.search-icon
-{
-	color: #fff;
-	padding-left: 20px;
-	padding-top: 2px;
-}
+
 
 .search-flex
 {
@@ -239,4 +232,62 @@ ul
 		
 		font-size: 25px;
 	}
+}
+
+.search-icon
+{
+  margin-left: auto;
+}
+.search-click
+{
+  margin-left: auto;
+  display: flex;
+}
+.top
+{
+  display: flex;
+  margin-top:20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mdl-textfield__label
+{
+	top: 3px;
+	height: 45px;
+}
+.mdl-textfield__input
+{
+	padding: 4px 0;
+}
+.mdl-textfield
+{
+	padding: 0px 0;
+	padding-bottom: 11px;
+	width: 200px;
+}
+
+.mdl-button
+{
+	border-radius: 50%;
+	padding: 0px;
+	min-width: 35px;
+}
+.card
+{
+     margin-top: -335px;
+    z-index: 2;
+    position: relative;  
+
+}
+.background-color
+{
+   background-color: #4285F4;
+    height: 350px;
+      width:100%;
+       z-index: 1;
+        position: relative;     
+}
+.demo-footer
+{
+	margin-top: 40px;
 }

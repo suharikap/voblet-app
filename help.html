@@ -11,43 +11,34 @@
     <link rel="stylesheet" href="css/navbar.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="help.css">
+
   
 </head>
 <body>
-	<div class="top-field">
-	   <div class="top-field-text">
-	   	Google
-	   </div>
-	    <div class="mdl-card  search-card">
-		  <div class="mdl-textfield search-textfield">
-		    <input class="mdl-textfield__input search-input" type="text" id="sample1">
-		    <label class="mdl-textfield__label" for="sample1">Text...</label>
-		  </div>
-	    </div>
-	    <div class="mdl-card search-button-card">
-	    	<i class="material-icons search-icon">&#xE8B6;</i>
-	    </div>
-        </div>
-        <div class="min-field">
-        <div class="top-field-min">
-        <div class="top-field-text-min">
+    <div class="top">
+    <div class="top-field-text">
         Google
-       </div>
-        <div class="mdl-card search-button-min search-minimize">
-            <i class="material-icons search-icon">&#xE8B6;</i>
-        </div>
-        </div>
-        <div class="search-flex" style="display: none;">
-          <div class="mdl-textfield mdl-js-textfield search-card-min">
-            <input class="mdl-textfield__input" type="text" id="sample1">
-            <label class="mdl-textfield__label" for="sample1">Search..</label>
-          </div>
-          <i class="material-icons close-icon">&#xE5CD;</i>
-        </div>
-        </div>
-	    
-	
-    <div class="background-color">
+    </div>
+
+    <div class="search-icon ">
+    <button class="mdl-button mdl-js-button">
+    <i class="material-icons">&#xE8B6;</i>
+    </button>
+    </div>
+    <div class="search-click" style="display: none;">
+    <button class="mdl-button mdl-js-button">
+    <i class="material-icons search-click-icon">&#xE8B6;</i>
+    </button>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Search...</label>
+  </div>
+    </div>
+    </div>
+    
+	<div class="background-color">
+    </div>
+    <div class="card">
     <div class="top-bar">
     <div class="top-bar-left">Chrome Help</div>
     <div class="top-bar-right">
@@ -58,6 +49,7 @@
     <div>HELPFORUM</div>
     </div>
     </div>
+
     <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--2-col">
     </div>
@@ -74,7 +66,7 @@
      	<div>Popular Articles</div>
      </div>
      <div style="display: none;" id="list">
-     	<ul>
+     	<ul class="list">
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
@@ -92,7 +84,7 @@
      	<div>Get started with Google Chrome</div>
      </div>
      <div style="display: none;" id="list2">
-     	<ul>
+     	<ul class="list">
      		<li>Update Google Chrome</li>
      		<li>Update Google Chrome</li>
      		<li>Update Google Chrome</li>
@@ -109,7 +101,7 @@
      	<div>Personalize Chrome</div>
      </div>
      <div style="display: none;" id="list3">
-     	<ul>
+     	<ul class="list">
      		<li>Sign in to Chrome</li>
      		<li>Sign in to Chrome</li>
      		<li>Sign in to Chrome</li>
@@ -126,7 +118,7 @@
      	<div>Search the web</div>
      </div>
      <div style="display: none;" id="list4">
-     	<ul>
+     	<ul class="list">
      		<li>How to search in Chrome</li>
      		<li>How to search in Chrome</li>
      		<li>How to search in Chrome</li>
@@ -143,7 +135,7 @@
      	<div>Settings and display</div>
      </div>
      <div style="display: none;" id="list5">
-     	<ul>
+     	<ul class="list">
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
@@ -160,7 +152,7 @@
      	<div>Chrome for Mobile</div>
      </div>
      <div style="display: none;" id="list6">
-     	<ul>
+     	<ul class="list">
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
      		<li>Download and install Google Chrome</li>
@@ -175,8 +167,17 @@
     </div>
     </div>
     </div>
- 
+       <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+          </div>
+        </footer>
 </body>
+
 <script src="js/material.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/test.js"></script>
